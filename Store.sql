@@ -45,6 +45,29 @@ INSERT INTO `Listings` VALUES (3,'3','3',3.00,'b'),(4,'1','1',1.00,'a');
 UNLOCK TABLES;
 
 --
+-- Table structure for table `Test`
+--
+
+DROP TABLE IF EXISTS `Test`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `Test` (
+  `name` varchar(20) NOT NULL,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Test`
+--
+
+LOCK TABLES `Test` WRITE;
+/*!40000 ALTER TABLE `Test` DISABLE KEYS */;
+INSERT INTO `Test` VALUES ('alara'),('tamer');
+/*!40000 ALTER TABLE `Test` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `Users`
 --
 
@@ -89,4 +112,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-14 17:22:02
+-- Dump completed on 2023-04-14 17:35:14
